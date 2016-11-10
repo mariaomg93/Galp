@@ -25,23 +25,23 @@ public class ControladorCombustible extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		if (request.getParameter("gasoila")!= null) {
+		if (request.getParameter("gasoila.x")!= null || request.getParameter("gasoila") != null  ) {
 			
-
+		
 			response.sendRedirect("html/gracias.html");
 
 		
 	}
 	
 	
-	if (request.getParameter("gasoila+") != null) {
+	if (request.getParameter("gasoila+.x")!= null ||request.getParameter("gasoila+") != null) {
 
 		
 			response.sendRedirect("html/gracias.html");}
 			
 			
 			
-			if (request.getParameter("gasolina95")!= null) {
+	if (request.getParameter("gasolina95.x")!= null ||request.getParameter("gasolina95")!= null) {
 				
 
 				response.sendRedirect("html/gracias.html");}
@@ -50,7 +50,7 @@ public class ControladorCombustible extends HttpServlet {
 		
 		
 		
-		if (request.getParameter("gasolina98") != null) {
+		if (request.getParameter("gasolina98.x")!= null ||request.getParameter("gasolina98") != null) {
 
 			
 				response.sendRedirect("html/gracias.html");}		

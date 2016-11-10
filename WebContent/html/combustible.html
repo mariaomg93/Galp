@@ -7,18 +7,38 @@
 <title></title>
 </head>
 <body>
-<h1>Elija su combustible, por favor.</h1>
-<br><br>
-<form action="../ControladorCombustible" method="get">
-<input id="gasoila"	name="gasoila" type="submit" value="Gasoil A">
-<br><br>
-<input id="gasoila+"name="gasoila+" type="submit" value="Gasoil A +">
-<br><br>
-<input id="gasolina95"name="gasolina95" type="submit" value="Gasolina 95">
-<br><br>
-<input id="gasolina98"name="gasolina98" type="submit" value="Gasolina 98">
-</form>
+<div class=container>
+		<div id="cabecera"  class=row>		
+		<br><br>
+		</div>
+		<img src="http://www.galpenergia.com/resources/img/logo.jpg">
+		<br><br>
+	</div>
+<h1 id="letras">Elija su combustible, por favor.</h1>
+<br><br><br><br>
+<div class="container text-center" >
+	<form action="../ControladorCombustible" method="get">
+		<div class="col-md-3 ">
+			<input type="image" name="gasoila" src="https://s-media-cache-ak0.pinimg.com/236x/15/d0/58/15d0587d05d9323e31d64d8aba396d9b.jpg" alt="Submit" height="300" /><br>
+			<input id="botonc" name="gasoila" type="submit" value="Gasoil A">
+		</div>
 
+		<div class="col-md-3 ">
+			<input type="image" name="gasoila+" src="https://s-media-cache-ak0.pinimg.com/originals/8b/e9/20/8be920d61d13a9819ef11e9ff90412f0.jpg"alt="Submit" height="300" /><br>
+			<input id="botonc" name="gasoila+" type="submit" value="Gasoil A +">
+		</div>
+
+		<div class="col-md-3 ">
+			<input type="image" name="gasolina95" src="https://s-media-cache-ak0.pinimg.com/originals/b7/af/35/b7af35db06770f9342cd90c668583c71.jpg"alt="Submit" height="300" /><br>
+			<input id="botonc" name="gasolina95" type="submit" value="Gasolina 95">
+		</div>
+
+		<div class="col-md-3 ">
+			<input type="image" name="gasolina98" src="http://www.baghera.es/uploads/images/accessoires/station-service-baghera-01.jpg"alt="Submit" height="300" /><br>
+			<input id="botonc" name="gasolina98" type="submit" value="Gasolina 98">
+		</div>
+	</form>
+</div>
 
 
 </body>

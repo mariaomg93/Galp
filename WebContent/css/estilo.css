@@ -15,6 +15,7 @@
 #oculto2{
 	
 	display:none;
+	
 }
 
 #cabecera{
@@ -23,13 +24,39 @@
 	
 }
 
-#btn_efectivo{
+
+#letras{
+	
+	text-align: center;
+}
+
+#botonc{
 	
 	background-color:gray;
 	color:white;
 }
-#btn_tarjeta{
+
+#aceptar1,#aceptar2,#cancelar1,#cancelar2{
 	
 	background-color:gray;
 	color:white;
 }
+
+.orange-circle-button {
+	box-shadow: 2px 4px 0 2px rgba(0,0,0,0.1);
+	border: .5em solid #E84D0E;
+	font-size: 1em;
+	line-height: 1.1em;
+	color: #ffffff;
+	background-color:#fa4616;
+	margin: auto;
+	border-radius: 50%;
+	height: 7em;
+	width: 7em;
+	position: relative;
+}
+
+
+
+
+
