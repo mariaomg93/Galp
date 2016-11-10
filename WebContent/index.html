@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/estilo.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/mijavascript.js"></script>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+	<div class=container>
+		<div id="cabecera"  class=row>		
+		<br><br>
+		</div>
+		<img src="http://www.galpenergia.com/resources/img/logo.jpg">
+		<br><br>
+	</div>
+	
+	<div class="container">
+	<h1>Bienvenido a su gasolinera de confianza</h1>
+	<br><br>	
+	</div>
+	
+	
+	
+		<div class="row">
+			<div class="col-md-3 col-md-offset-2">
+			<button id="btn_efectivo" type="button" class="boton_efectivo">Efectivo</button>
+			</div>
+			
+			<div class="col-md-3 col-md-offset-3">
+			<button id="btn_tarjeta" type="button" class="boton_tarjeta">Tarjeta</button>		
+		    </div>
+		</div>
+		
+
+
+	<div id="oculto1" class="row">
+	<div class="col-md-3 col-md-offset-8">
+		<h4>PAGO CON TARJETA</h4>
+		<br>
+		<form action="ControladorPago" method="get">
+			<input name="cantidad" type="number" placeholder="Cantidad $">
+			<br>
+			<br> <input name="nombre" type="text" placeholder="Nombre">
+			<br>
+			<br> <input name="numero_tarjeta" type="number" placeholder="Nº de tarjeta"> <br>
+			<br> <input name="fecha_caducidad" type="date"	placeholder="Fecha de caducidad"> <br> 
+				 <input id="aceptar1"	name="aceptar" type="submit" value="Aceptar"> 
+				 <input	id="cancelar1" name="cancelar" type="button" value="Cancelar">
+		</form>
+		</div>
+	</div>
+	
+	<div id="oculto2" class="row">
+	<div class="col-md-2 col-md-offset-2">
+		<br>
+		<br>
+		<h4>EFECTIVO</h4>
+		<br>
+		<form action="ControladorPago" method="get">
+			<input name="cantidad" type="number" placeholder="Cantidad $">
+			<br> <input id="aceptar2" name="aceptar" type="submit" value="Aceptar">
+			<input  id="cancelar2" name="cancelar" type="button" value="Cancelar">
+		</form>
+		</div>
+	</div>
+</body>
+</html>
